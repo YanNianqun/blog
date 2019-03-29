@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Yan&#39;s Blog">
 <meta property="og:description" content="class Defining class  class include: method(what it can do),   state(what it look like）Define class sytax:   123class fraction:  (Here comes the method)      def method(parameters,):   Class method  F">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T01:40:48.890Z">
+<meta property="og:updated_time" content="2019-03-29T02:03:32.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python object and class">
 <meta name="twitter:description" content="class Defining class  class include: method(what it can do),   state(what it look like）Define class sytax:   123class fraction:  (Here comes the method)      def method(parameters,):   Class method  F">
@@ -112,14 +112,14 @@
 </blockquote>
 <blockquote>
 <hr>
-<p>Fourth method, operation ==  (_eq_):<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, other)</span>:</span></span><br><span class="line">    firstnum = self.num * other.den</span><br><span class="line">    secondnum = other.num * self.den</span><br><span class="line">    <span class="keyword">return</span> firstnum == secondnum</span><br></pre></td></tr></table></figure></p>
+<p>Fourth method, operation ==  (_eq_):<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, other)</span>:</span></span><br><span class="line">    firstnum = self.num * other.den</span><br><span class="line">    secondnum = other.num * self.den</span><br><span class="line">    <span class="keyword">return</span> firstnum == secondnum</span><br><span class="line">    <span class="comment">#“+，-，*，/”实际上是调用相应的method，这里我们人为定同名method，取代原来的。</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>Assume we have two Fraction objects, f1 and f2. f1==f2 will only be True if they are references to the same object. Two different objects with the same numerators and denominators would not be equal under this implementation. This is called <strong>shallow equality</strong>.<br>To achieve <strong>deep equality</strong>, equality by the same value, we need to create the  abouve method ‘_eq_‘ to over ride the deafult.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/YanNianqun/2019/03/29/python-data-structure-and-algrithm/" data-id="cjttehife0001b8u8hiaqy26k" class="article-share-link">Share</a>
+      <a data-url="https://github.com/YanNianqun/2019/03/29/python-data-structure-and-algrithm/" data-id="cjttf9qau0004lgu86d6z3y7z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/data-structure-and-algorithm-using-python/">data structure and algorithm using python</a></li></ul>
