@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Yan&#39;s Blog">
 <meta property="og:description" content="class Defining class  class include: method(what it can do),   state(what it look like）Define class sytax:   123class fraction:  (Here comes the method)      def method(parameters,):   Class method  F">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T01:31:14.542Z">
+<meta property="og:updated_time" content="2019-03-29T01:36:06.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python object and class">
 <meta name="twitter:description" content="class Defining class  class include: method(what it can do),   state(what it look like）Define class sytax:   123class fraction:  (Here comes the method)      def method(parameters,):   Class method  F">
@@ -97,10 +97,11 @@
 <li><p>Class method</p>
 <blockquote>
 <p>First method, constructor(_init_):<br>The constructor  is always called _init_, defines the way in which data objects are created.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,top,bottom)</span>:</span></span><br><span class="line">        self.num = top <span class="comment">#state data 1</span></span><br><span class="line">        self.den = bottom  <span class="comment">#state data 2</span></span><br><span class="line">self <span class="keyword">is</span> a special parameter that will always be used <span class="keyword">as</span>   </span><br><span class="line">a reference back to the object itself.    </span><br><span class="line">It must always be the first formal parameter; however,   </span><br><span class="line">it will never be given an actual parameter value upon   </span><br><span class="line">invocation</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,top,bottom)</span>:</span></span><br><span class="line">        self.num = top <span class="comment">#state data 1</span></span><br><span class="line">        self.den = bottom  <span class="comment">#state data 2</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ol>
+<p>self is a special parameter that will always be used as a reference back to the object itself.It must always be the first formal parameter;   however, it will never be given an actual parameter value upon invocation.</p>
 <blockquote>
 <hr>
 <p>Second method, enable print the object (_str_):<br>The print function requires that the object convert itself into a string so that the string can be written to the output.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span>  </span><br><span class="line">    <span class="keyword">return</span> str(self.num)+<span class="string">"/"</span>+str(self.den)</span><br></pre></td></tr></table></figure></p>
@@ -113,12 +114,12 @@
 <hr>
 <p>Fourth method, operation ==  (_eq_):<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, other)</span>:</span></span><br><span class="line">    firstnum = self.num * other.den</span><br><span class="line">    secondnum = other.num * self.den</span><br><span class="line">    <span class="keyword">return</span> firstnum == secondnum</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<p>Assume we have two Fraction objects, f1 and f2. f1==f2 will only be True if they are references to the same object. Two different objects with the same numerators and denominators would not be equal under this implementation. This is called <strong>shallow equality</strong>.<br>To achieve <strong>deep equality</strong>, –equality by the same value, we need to create the  abouve method ‘_eq_‘ to over ride the deafult.</p>
+<p>Assume we have two Fraction objects, f1 and f2. f1==f2 will only be True if they are references to the same object. Two different objects with the same numerators and denominators would not be equal under this implementation. This is called <strong>shallow equality</strong>.<br>To achieve <strong>deep equality</strong>, equality by the same value, we need to create the  abouve method ‘_eq_‘ to over ride the deafult.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/YanNianqun/2019/03/29/python-data-structure-and-algrithm/" data-id="cjtte2oqy0001jgu8j7dwm5vt" class="article-share-link">Share</a>
+      <a data-url="https://github.com/YanNianqun/2019/03/29/python-data-structure-and-algrithm/" data-id="cjttecg6d0003z8u8rvd39u16" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/data-structure-and-algorithm-python-class-and-object/">data structure and algorithm, python class and object</a></li></ul>
